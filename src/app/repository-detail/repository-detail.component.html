@@ -1,0 +1,10 @@
+<div class="details-wrapper">
+<div class="wrapper detail-wrapper"*ngIf="repo">
+<h2>{{repo.name}}</h2> <br>
+<h4>Created on the {{repo.created_at | slice:0:10}}</h4><p></p>
+<p>Main language: <b>{{repo.language}}</b></p><br>
+<a class="btn btn-outline-success" href="{{repo.html_url}}">View source code</a><br>
+<br>
+<a class="btn btn-secondary" routerLink="/repositories">back</a>
+</div>
+

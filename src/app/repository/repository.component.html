@@ -1,0 +1,31 @@
+<br>
+<br>
+<div class="content-wrapper-repo">
+<h1 class="title">Repos </h1>
+<div class="md-form active-pink active-pink-2 mb-3 mt-0">
+  <input class="form-control search-bar" type="text" placeholder="Search" aria-label="Search"        [(ngModel)]="searchTerm">
+</div>
+
+<div *ngFor="let repo of repos | filter:searchTerm">
+  
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{repo.name}}</h5>
+      <p class="card-text">{{repo.description}}</p>
+    </div>
+    <div class="card-footer">
+        <a [routerLink]="['/repositories', repo.name]" class="btn btn-primary">Details</a>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="button-back">
+<button type="button" class="btn btn-secondary btn-lg btn-block title" routerLink="/"><i class="fa fa-arrow-left move-icon"></i>Go back</button>
+</div>
+</div>
+
+
+
+ 

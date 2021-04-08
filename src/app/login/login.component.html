@@ -1,0 +1,22 @@
+<br>
+ 
+<div class="content-wrapper-login">
+
+
+
+<div class="wrapper fadeInDown">
+  
+   
+<form [formGroup]="sign_in" (ngSubmit)="onSubmit(sign_in.value)" class="form-style " >
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1><br>
+  <input type="email" id="inputEmail" class="form-control" formControlName="Username" placeholder="username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+ <a class="login-backButton btn btn-dark" routerLink="/"><i class="fa fa-caret-left move-icon"></i>main</a>
+</form>
+  
+</div>
+
+</div>
+
+  
